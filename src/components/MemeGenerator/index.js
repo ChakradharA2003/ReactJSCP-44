@@ -131,7 +131,7 @@ class MemeGenerator extends Component {
               />
             </InputContainer>
             <InputContainer>
-              <LabelElement htmlFor="fontSize">Font Size</LabelElement>
+              <LabelElement htmlFor="fontSizes">Font Size</LabelElement>
               <SelectInput
                 as="select"
                 id="fontSizes"
@@ -139,7 +139,7 @@ class MemeGenerator extends Component {
                 value={fontSize}
               >
                 {fontSizesOptionsList.map(font => (
-                  <option key={font.id} value={font.id}>
+                  <option key={font.optionId} value={font.optionId}>
                     {font.displayText}
                   </option>
                 ))}
